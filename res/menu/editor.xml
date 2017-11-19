@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.photoeditor.EditorActivity" >
+
+    <item
+        android:id="@+id/shareImages"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Share"/>
+    <item
+        android:id="@+id/save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Save"/>
+    <item
+        android:id="@+id/showImages"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Show"
+        android:icon="@android:drawable/ic_menu_recent_history">
+        <menu>
+            <item
+                android:id="@+id/editImages"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="Edited Images"/>
+            <item
+                android:id="@+id/SharedImages"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="Shared Images"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/setAs"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Save"/>
+</menu>

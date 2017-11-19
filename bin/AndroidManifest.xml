@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bosseditor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Photo Editor"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.bosseditor.SplashActivity"
+            android:label="Photo Editor" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bosseditor.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.SampleImageSelectionActivity"
+            android:label="@string/title_activity_main_image_selection" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.MainImageSelectionActivity"
+            android:label="@string/title_activity_main_image_selection" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.TempActivity"
+            android:label="@string/title_activity_temp" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.EditorActivity"
+            android:label="@string/title_activity_editor" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.SelectionActivity"
+            android:label="@string/title_activity_selection" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.SharedImagesActivity"
+            android:label="@string/title_activity_shared_images" >
+        </activity>
+        <activity
+            android:name="com.bosseditor.TestCrop"
+            android:label="@string/title_activity_test_crop" >
+        </activity>
+    </application>
+
+</manifest>
